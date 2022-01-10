@@ -1,0 +1,104 @@
+.black-overlay-wrapper{
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.movie-detail-wrapper-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70vh;
+    width: 70vw;
+    background-color: whitesmoke;
+    padding: 0;
+    border-radius: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.movie-detail-wrapper-modal .left-area{
+    height: 100%;
+    width: 40%;
+    background-color: 	#DCDCDC;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.movie-detail-wrapper-modal .right-area{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 55%;
+    overflow-y: auto;
+}
+
+.close-modal-button{
+    background-color: black;
+    color: azure;
+    margin-bottom: 30px;
+}
+
+.close-modal-button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close-modal-X-button{
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rating-box{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.green-rating{
+    background-color: rgb(48, 238, 48);
+}
+
+.yellow-rating{
+    background-color: rgb(211, 211, 65);
+}
+
+.red-rating{
+    background-color: red;
+}
+
+@media screen and (max-width:500px) {
+
+    .movie-detail-wrapper-modal{
+        height: 88vh;
+        width: 85vw;
+    }
+
+    .movie-detail-wrapper-modal{
+        flex-direction: column;
+    }
+
+    .movie-detail-wrapper-modal .left-area{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        height: 50%;
+    }
+
+    .movie-detail-wrapper-modal .right-area{
+        width: 80%;
+    }
+}

@@ -1,0 +1,23 @@
+.search-container{
+    margin: 0;
+}
+
+.input-container{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container input{
+    width:400px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.input-container input:focus{
+    border: none;
+}

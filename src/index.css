@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.content-width{
+  width: 90%;
+  margin: auto;
+}
+
+.common-button{
+  padding: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.12s ease-in;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.main-brand-color{
+  background-color: #1E1E1E;
+}
+
+
+
+
+.blink-text{
+  animation: blinker 2s ease-out infinite;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}

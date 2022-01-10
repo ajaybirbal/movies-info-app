@@ -1,0 +1,58 @@
+.card {
+    height: 400px;
+    width: 23%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+    box-shadow: 13px 28px 69px -32px rgba(0, 0, 0, 0.76);
+    -webkit-box-shadow: 13px 28px 69px -32px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 13px 28px 69px -32px rgba(0, 0, 0, 0.76);
+}
+
+.card-black-transparent {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 15px;
+    border-radius: 15px;
+    height: 95%;
+}
+
+.card h2 {
+    color: white;
+}
+
+.card p {
+    color: white;
+    margin-top: 20px;
+}
+
+.card .view-more-button-single-movie {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.card .view-more-button-single-movie:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+@media screen and (max-width: 1110px) {
+    .card{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .card{
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .card{
+        width: 90%;
+    }
+}
